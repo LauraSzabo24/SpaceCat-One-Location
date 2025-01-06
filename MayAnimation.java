@@ -1,13 +1,13 @@
 
 import mayflower.*;
 
-public class Animation
+public class MayAnimation
 {
     private MayflowerImage[] frames;
     private int framerate;
     private int currentFrame;
     
-    public Animation(int fr, String[] f)
+    public MayAnimation(int fr, String[] f)
     {
         framerate = fr;
         currentFrame = 0;

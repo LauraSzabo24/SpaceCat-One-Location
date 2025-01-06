@@ -1,10 +1,8 @@
 import mayflower.*;
 
-//when comented code below is used, and extends animated actor, no super.act(), teleport works.
-
-public class Portal extends AnimatedActor
+public class Portal extends MayAnimatedActor
 {
-    private Animation cool;
+    private MayAnimation cool;
     
     private int goForX;
     private int goForY;
@@ -19,7 +17,7 @@ public class Portal extends AnimatedActor
             arr[i-1] ="img/Portals/Portal ("+i+").png";
             System.out.println(i);
         }
-        cool = new Animation(120, arr);
+        cool = new MayAnimation(120, arr);
         cool.scale(70,90);
         setAnimation(cool);
     }

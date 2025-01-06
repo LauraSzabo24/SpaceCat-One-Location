@@ -3,13 +3,13 @@ import mayflower.*;
 
 public class AnimatedObject extends Actor
 {
-    private Animation animation;
+    private MayAnimation animation;
     private Timer animationTimer;
     public AnimatedObject()
     {
         animationTimer = new Timer(1000);
     }
-    public void setAnimation(Animation a)
+    public void setAnimation(MayAnimation a)
     {
         animation = a;
     }

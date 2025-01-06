@@ -1,15 +1,15 @@
   
 import mayflower.*;
 
-public class AnimatedActor extends GravityActor
+public class MayAnimatedActor extends MayGravityActor
 {
-    private Animation animation;
+    private MayAnimation animation;
     private Timer animationTimer;
-    public AnimatedActor()
+    public MayAnimatedActor()
     {
         animationTimer = new Timer(50000000);
     }
-    public void setAnimation(Animation a)
+    public void setAnimation(MayAnimation a)
     {
         animation = a;
     }

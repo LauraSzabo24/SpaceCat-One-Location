@@ -1,13 +1,8 @@
 import mayflower.*;
-public class MayMovableAnimatedActor extends AnimatedActor
+public class MayMovableAnimatedActor extends MayAnimatedActor
 {
    
-     private Animation walkRight;
-     private Animation idle;
-     private Animation idleLeft;
-     private Animation leftFalling;
-     private Animation rightFalling;
-     private Animation walkLeft;
+     private MayAnimation walkRight, idle, idleLeft, leftFalling, rightFalling, walkLeft;
      private String currentAction;
      private String direction;
      
@@ -17,7 +12,7 @@ public class MayMovableAnimatedActor extends AnimatedActor
      
      public int[] location;
      
-     public MovableAnimatedActor()
+     public MayMovableAnimatedActor()
      {
          direction = "right";
          jumping = false;
@@ -178,37 +173,37 @@ public class MayMovableAnimatedActor extends AnimatedActor
        
             }
     //might need to remove that
-    public void setAnimation(Animation a)
+    public void setAnimation(MayAnimation a)
     {
         super.setAnimation(a);
     }
    
-    public void setWalkRightAnimation(Animation ani)
+    public void setWalkRightAnimation(MayAnimation ani)
     {
         walkRight = ani;
     }
    
-    public void setIdleAnimation(Animation ani)
+    public void setIdleAnimation(MayAnimation ani)
     {
         idle = ani;
     }
    
-    public void setWalkLeftAnimation(Animation ani)
+    public void setWalkLeftAnimation(MayAnimation ani)
     {
         walkLeft = ani;
     }
    
-    public void setIdleLeftAnimation(Animation ani)
+    public void setIdleLeftAnimation(MayAnimation ani)
     {
         idleLeft = ani;
     }
    
-    public void setLeftFallingAnimation(Animation ani)
+    public void setLeftFallingAnimation(MayAnimation ani)
     {
         leftFalling = ani;
     }
    
-    public void setRightFallingAnimation(Animation ani)
+    public void setRightFallingAnimation(MayAnimation ani)
     {
         rightFalling = ani;
     }

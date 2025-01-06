@@ -2,15 +2,9 @@
  
 import mayflower.*;
 
-public class Cat extends MovableAnimatedActor
+public class Cat extends MayMovableAnimatedActor
 {
-    private Animation walkRight;
-    private Animation walkLeft;
-    private Animation idle;
-    private Animation idleLeft;
-    private Animation fallLeft;
-    private Animation fall;
-    
+    private MayAnimation walkRight, walkLeft, idle, idleLeft, fallLeft, fall;    
     private  int score;
     private  int lives;
     public Cat() 
@@ -39,14 +33,14 @@ public class Cat extends MovableAnimatedActor
         super.setLeftFallingAnimation(fallLeft);
         super.setRightFallingAnimation(fall);
     }
-    public Animation makeAnimation(Animation anim, int l, String name, int w, int h, int t, int m)
+    public MayAnimation makeAnimation(MayAnimation anim, int l, String name, int w, int h, int t, int m)
     {
         String[] frames = new String[l];
         for(int i=1; i<=frames.length; i++)
         {
             frames[i-1]= "img/cat/" + name + " ("+i+").png";
         }
-        anim = new Animation(50, frames);
+        anim = new MayAnimation(50, frames);
         anim.scale(w,h);
         //anim.setTransparency(t);
         anim.mirrorHorizontally(m);

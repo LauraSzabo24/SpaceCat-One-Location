@@ -1,10 +1,10 @@
  
 import mayflower.*;
 
-public class GravityActor extends Actor
+public class MayGravityActor extends Actor
 {
     private boolean passLowLimit;
-    public GravityActor()
+    public MayGravityActor()
     {
         passLowLimit = false;
     }

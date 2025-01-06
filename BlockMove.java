@@ -1,8 +1,5 @@
 import mayflower.*;
-
-//when comented code below is used, and extends animated actor, no super.act(), teleport works.
-
-public class BlockMove extends AnimatedActor
+public class BlockMove extends MayAnimatedActor
 {
     
     
